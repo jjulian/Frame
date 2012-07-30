@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'icons';
+  src: url('/fonts/icons.eot');
+  src: url('/fonts/icons.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/icons.svg#icons') format('svg'),
+    url('/fonts/icons.woff') format('woff'),
+    url('/fonts/icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*="icon-"]:before {
+  font-family: 'icons';
+  font-style: normal;
+  speak: none;
+}
+
+.icon-music:before {
+  content: "\21";
+}
+.icon-event:before {
+  content: "\23";
+}
+.icon-person:before {
+  content: "\22";
+}
+.icon-idea:before {
+  content: "\24";
+}
+.icon-book:before {
+  content: "\25";
+}
+
+div[data-role="page"]{
+    margin: 0;
+    padding: 0;
+    width: 640px;
+    overflow: hidden;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+    font-family: Baskerville;
+    font-weight: normal;
+}
+a:link{
+    color: #000;
+    text-decoration: none;
+    font-family: Baskerville;
+    font-weight: normal;
+}
+.ui-body-c .ui-link:link {
+  color: #000;
+  text-decoration: none;
+  font-family: Baskerville;
+  font-weight: normal;
+}
+.ui-body-c .ui-link:visited {
+  color: #000;
+  text-decoration: none;
+  font-family: Baskerville;
+  font-weight: normal;
+}
+
+.serif{
+  font-family: Baskerville;
+  font-weight: normal;
+    font-size: 36px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: left;
+}
+
+ul li{
+    padding: .6em 0;
+    float: left;
+}
+
+ul li [class^="icon-"]{
+    width: 50px;
+    padding: 4px 20px 0 0;
+    float: left;
+    text-align: center;
+    font-size: 80%;
+}
+
+ul li a{
+    display: block;
+    float: right;
+    width: 446px;
+}
+
+.bg{
+    position: absolute;
+    z-index: 1;
+    width: 640px;
+    height: 920px;
+}
+
+.bg#thirteen{
+    background: url(/images/13c-bg.png) no-repeat;
+}
+
+.bg#fifteen{
+    background: url(/images/15c-bg.png) no-repeat;
+}
+
+.bg#sixteen{
+    background: url(/images/16c-bg.png) no-repeat;
+}
+
+.bg#seventeen{
+    background: url(/images/17c-bg.png) no-repeat;
+}
+
+.bg#eighteen{
+    background: url(/images/18c-bg.png) no-repeat;
+}
+
+#scroller{
+    width: 640px;
+    z-index: 100;
+    height: 920px;
+    top: 0;
+    position: absolute;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    float: left;
+}
+
+#scroller #content{
+    margin: 880px 0 0 0;
+    padding: 52px;
+    background: url(/images/arrow.png) no-repeat 50% 12px #fff;
+    -webkit-box-shadow: 0px 200px 180px 200px #000;
+    float: left;
+}
+
+#base{
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 0 0 60px 0;
+}
+
+a#floorplan-thumb{
+    width: 342px;
+    height: 134px;
+    display: block;
+    margin: 0 auto;
+    background: url(/images/ren-bar-thumb-sm.png) no-repeat;
+    cursor: pointer;
+}

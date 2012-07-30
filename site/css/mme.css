@@ -1,0 +1,158 @@
+/* jQuery overrides */
+.ui-content { padding: 0; }
+
+/* general */
+.main-map {
+  position: relative;
+}
+.hitarea {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 0px solid red;
+  cursor: pointer;
+}
+
+/* nav of the levels in the main map view */
+.main-map .hitarea {
+  width: 115px;
+  height: 80px;
+}
+.main-map .hitarea[data-level="4"] {
+  position: absolute;
+  top: 52px;
+  left: 485px;
+}
+.main-map .hitarea[data-level="3"] {
+  position: absolute;
+  top: 159px;
+  left: 485px;
+}
+.main-map .hitarea[data-level="2"] {
+  position: absolute;
+  top: 265px;
+  left: 485px;
+}
+.main-map .hitarea[data-level="1"] {
+  position: absolute;
+  top: 370px;
+  left: 485px;
+}
+
+/* nav to specific sections from the main map view */
+.main-map .hitarea[data-section="1a"] {
+  position: absolute;
+  top: 542px;
+  left: 39px;
+  width: 310px;
+  height: 131px;
+}
+.main-map .hitarea[data-section="1b"] {
+  position: absolute;
+  top: 567px;
+  left: 377px;
+  width: 246px;
+  height: 140px;
+}
+.main-map .hitarea[data-section="2a"] {
+  position: absolute;
+  top: 520px;
+  left: 50px;
+  width: 270px;
+  height: 120px;
+}
+.main-map .hitarea[data-section="2b"] {
+  position: absolute;
+  top: 645px;
+  left: 180px;
+  width: 250px;
+  height: 130px;
+}
+.main-map .hitarea[data-section="2c"] {
+  position: absolute;
+  top: 560px;
+  left: 435px;
+  width: 150px;
+  height: 120px;
+}
+.main-map .hitarea[data-section="3a"] {
+  position: absolute;
+  top: 502px;
+  left: 43px;
+  width: 266px;
+  height: 125px;
+}
+.main-map .hitarea[data-section="3b"] {
+  position: absolute;
+  top: 632px;
+  left: 180px;
+  width: 250px;
+  height: 149px;
+}
+.main-map .hitarea[data-section="3c"] {
+  position: absolute;
+  top: 525px;
+  left: 415px;
+  width: 184px;
+  height: 106px;
+}
+.main-map .hitarea[data-section="4a"] {
+  position: absolute;
+  top: 485px;
+  left: 43px;
+  width: 285px;
+  height: 134px;
+}
+.main-map .hitarea[data-section="4b"] {
+  position: absolute;
+  top: 500px;
+  left: 410px;
+  width: 191px;
+  height: 110px;
+}
+
+/* nav to a gallery from a section */
+.hitarea[data-rel="back"] {
+  position: absolute;
+  top: 248px;
+  left: 55px;
+  width: 283px;
+  height: 76px;
+}
+
+#section3b .hitarea[href="18century.html"] {
+  position: absolute;
+  top: 525px;
+  left: 30px;
+  width: 200px;
+  height: 100px;
+}
+#section3b .hitarea[href="17century.html"] {
+  position: absolute;
+  top: 630px;
+  left: 100px;
+  width: 202px;
+  height: 140px;
+}
+#section3b .hitarea[href="16century.html"] {
+  position: absolute;
+  top: 628px;
+  left: 307px;
+  width: 213px;
+  height: 160px;
+}
+#section3b .hitarea[href="15century.html"] {
+  position: absolute;
+  top: 542px;
+  left: 384px;
+  width: 221px;
+  height: 82px;
+}
+#section3b .hitarea[href="13century.html"] {
+  position: absolute;
+  top: 451px;
+  left: 235px;
+  width: 260px;
+  height: 88px;
+}
+
