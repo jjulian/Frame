@@ -5,8 +5,9 @@ $(document).ready(function() {
   mme.mapView = new mme.LevelView({model: mme.levels.get(2)}); // museum entrance on floor 2
   mme.mapView.insertIntoDOM();
   //document.ontouchmove = function(e) { e.preventDefault(); }
-  _.each(['ma','mb','mc','md','1a','1b','2a','2b','2c','3a','3b','3c','4a','4b'], function(name) {
-    new Image().src = '/images/'+name+'.png';
+  _.each(['ma','mb','mc','md','1a','1b','2a','2b','2c','3a','3b','3c','4a','4b',
+    '13c-bg','15c-bg','16c-bg','17c-bg','18c-bg'], function(name) {
+    new Image().src = 'images/'+name+'.png';
   });
 });
 
@@ -26,7 +27,7 @@ mme.LevelView = Backbone.View.extend({
     'tap .hitarea.level': 'chooseLevel',
     'tap .hitarea.section': 'chooseSection'
   },
-  _template: '<img src="/images/<%= image %>"> \
+  _template: '<img src="images/<%= image %>"> \
     <a class="hitarea level" data-level="4"></a> \
     <a class="hitarea level" data-level="3"></a> \
     <a class="hitarea level" data-level="2"></a> \
@@ -90,7 +91,7 @@ mme.SectionView = Backbone.View.extend({
   id: 'section-map',
   attributes: {'data-role': 'page'},
   _template: '<div data-role="content" id="section<%= id %>"> \
-    <img src="/images/<%= image %>"> \
+    <img src="images/<%= image %>"> \
     <% _.each(galleries, function(gallery) { %> \
       <a class="hitarea gallery" href="<%= gallery %>" data-transition="none"></a> \
     <% }); %> \

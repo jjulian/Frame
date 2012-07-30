@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src: url('fonts/icons.eot');
-  src: url('fonts/icons.eot?#iefix') format('embedded-opentype'),
-    url('fonts/icons.svg#icons') format('svg'),
-    url('fonts/icons.woff') format('woff'),
-    url('fonts/icons.ttf') format('truetype');
+  src: url('../fonts/icons.eot');
+  src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icons.svg#icons') format('svg'),
+    url('../fonts/icons.woff') format('woff'),
+    url('../fonts/icons.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -103,23 +103,23 @@ ul li a{
 }
 
 .bg#thirteen{
-    background: url(images/13c-bg.png) no-repeat;
+    background: url(../images/13c-bg.png) no-repeat;
 }
 
 .bg#fifteen{
-    background: url(images/15c-bg.png) no-repeat;
+    background: url(../images/15c-bg.png) no-repeat;
 }
 
 .bg#sixteen{
-    background: url(images/16c-bg.png) no-repeat;
+    background: url(../images/16c-bg.png) no-repeat;
 }
 
 .bg#seventeen{
-    background: url(images/17c-bg.png) no-repeat;
+    background: url(../images/17c-bg.png) no-repeat;
 }
 
 .bg#eighteen{
-    background: url(images/18c-bg.png) no-repeat;
+    background: url(../images/18c-bg.png) no-repeat;
 }
 
 #scroller{
@@ -136,7 +136,7 @@ ul li a{
 #scroller #content{
     margin: 880px 0 0 0;
     padding: 52px;
-    background: url(images/arrow.png) no-repeat 50% 12px #fff;
+    background: url(../images/arrow.png) no-repeat 50% 12px #fff;
     -webkit-box-shadow: 0px 200px 180px 200px #000;
     float: left;
 }
@@ -153,6 +153,6 @@ a#floorplan-thumb{
     height: 134px;
     display: block;
     margin: 0 auto;
-    background: url(images/ren-bar-thumb-sm.png) no-repeat;
+    background: url(../images/ren-bar-thumb-sm.png) no-repeat;
     cursor: pointer;
 }
